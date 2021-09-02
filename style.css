@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5);
+    background-size: 500% 500%;
+    animation: animeBG 6s ease infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animeBG {
+    0% {background-position: 0%;}
+    100% {background-position: 100%}
+}
+
+ .container{
+    height: 100vh;
+    background-size: 100% 100%;
+ }
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(219, 228, 189, 0.4);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.navbar .logo:hover{
+    border-radius: 15px;
+    transform: scale(1.3);
+
+}
+
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: brown;
+    
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 6px;
+    line-height: 44px;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 2s;
+}
+
+.navbar ul li a:hover{
+    background: black;
+    border-radius: 22px;
+    transform: scale(1.16);
+
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Oswald', sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: black ;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color: black ;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.center .buttons{
+    margin: 35px 280px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-weight: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(206, 60, 50);
+    border: solid red 0px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.buttons button:hover{
+    background: rgb(235, 201, 201);
+}
+
+.center .kutu{
+    display:block;
+	border:5px solid #069;
+	padding:1px;
+    border-radius: 75px;
+    transform: scale(0.93);
+    transition:  1s;
+}
+
+.center .kutu:hover{
+    border-color: #075;
+    transform: scale(1.11);
+    border-radius: 150px;
+
+}
+
+/* .logo #transition{
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 2s;
+}
+
+.logo #transition:hover{
+    border-radius: 10px;
+    transform: scale(2);
+} */
